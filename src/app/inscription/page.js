@@ -74,7 +74,7 @@ const InscriptionElecteur = () => {
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium mb-1">Numéro CIN</label>
+              <label className="block text-black-700 font-medium mb-1">Numéro CIN</label>
               <input
                 type="text"
                 name="numéro_CIN"
@@ -86,7 +86,7 @@ const InscriptionElecteur = () => {
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium mb-1">Nom</label>
+              <label className="block text-black-700 font-medium mb-1">Nom</label>
               <input
                 type="text"
                 name="nom"
@@ -98,7 +98,7 @@ const InscriptionElecteur = () => {
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium mb-1">Numéro Bureau de Vote</label>
+              <label className="block text-black-700 font-medium mb-1">Numéro Bureau de Vote</label>
               <input
                 type="text"
                 name="numero_bureau_de_vote"

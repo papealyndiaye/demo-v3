@@ -60,7 +60,7 @@ const ConnexionElecteur = () => {
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-gray-700 font-medium mb-1">Numéro d'Électeur</label>
+              <label className="block text-black-700 font-medium mb-1">Numéro d'Électeur</label>
               <input
                 type="text"
                 name="identifier"
