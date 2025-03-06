@@ -6,9 +6,9 @@ import Link from 'next/link';
 const InscriptionElecteur = () => {
   const [formData, setFormData] = useState({
     username: '',
-    prenom: '',
+    numéro_CIN: '',
     nom: '',
-    date_naissance: '',
+    numero_bureau_de_vote: '',
   });
 
   const handleChange = (e) => {
@@ -26,8 +26,11 @@ const InscriptionElecteur = () => {
     <div className="min-h-screen bg-gray-100">
       {/* Navbar */}
       <header className="bg-white shadow-md py-4">
-        <nav className="container mx-auto flex justify-between items-center px-4">
+        <nav className="container mx-auto flex justify-between justify-center px-4">
           <ul className="flex gap-6 text-gray-800 font-medium">
+          <li className="dge mr-auto flex justify-between justify-center px-4">
+              <h2>D G E</h2>
+            </li>
             <li>
               <Link href="/" className="hover:text-blue-600 transition">
                 Accueil
@@ -43,11 +46,11 @@ const InscriptionElecteur = () => {
                 Connexion
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/validation" className="hover:text-blue-600 transition">
                 Validation d'identité
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </header>
@@ -71,11 +74,11 @@ const InscriptionElecteur = () => {
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium mb-1">Prénom</label>
+              <label className="block text-gray-700 font-medium mb-1">Numéro CIN</label>
               <input
                 type="text"
-                name="prenom"
-                value={formData.prenom}
+                name="numéro_CIN"
+                value={formData.numéro_CIN}
                 onChange={handleChange}
                 required
                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -95,11 +98,11 @@ const InscriptionElecteur = () => {
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium mb-1">Date de Naissance</label>
+              <label className="block text-gray-700 font-medium mb-1">Numéro Bureau de Vote</label>
               <input
-                type="date"
-                name="date_naissance"
-                value={formData.date_naissance}
+                type="text"
+                name="numero_bureau_de_vote"
+                value={formData.numero_bureau_de_vote}
                 onChange={handleChange}
                 required
                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"

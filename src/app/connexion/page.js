@@ -24,8 +24,11 @@ const ConnexionElecteur = () => {
     <div className="min-h-screen bg-gray-100">
       {/* Navbar */}
       <header className="bg-white shadow-md py-4">
-        <nav className="container mx-auto flex justify-between items-center px-4">
+        <nav className="container mx-auto flex justify-between justify-center px-4">
           <ul className="flex gap-6 text-gray-800 font-medium">
+          <li className="dge mr-auto flex justify-between justify-center px-4">
+              <h2>D G E</h2>
+            </li>
             <li>
               <Link href="/" className="hover:text-blue-600 transition">
                 Accueil
@@ -41,11 +44,11 @@ const ConnexionElecteur = () => {
                 Connexion
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/validation" className="hover:text-blue-600 transition">
                 Validation d'identité
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </header>
@@ -57,7 +60,7 @@ const ConnexionElecteur = () => {
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-gray-700 font-medium mb-1">Numéro d'Électeur ou Email</label>
+              <label className="block text-gray-700 font-medium mb-1">Numéro d'Électeur</label>
               <input
                 type="text"
                 name="identifier"
@@ -69,7 +72,7 @@ const ConnexionElecteur = () => {
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium mb-1">Mot de passe</label>
+              <label className="block text-gray-700 font-medium mb-1">Numéro CIN</label>
               <input
                 type="password"
                 name="password"

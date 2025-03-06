@@ -7,8 +7,11 @@ export default function Home() {
     <div className="min-h-screen bg-gray-100">
       {/* Navbar */}
       <header className="bg-white shadow-md py-4">
-        <nav className="container mx-auto flex justify-between items-center px-4">
+        <nav className="container mx-auto flex justify-between justify-center px-4">
           <ul className="flex gap-6 text-gray-800 font-medium">
+          <li className="dge mr-auto flex justify-between justify-center px-4">
+              <h2>D G E</h2>
+            </li>
             <li>
               <Link href="/" className="hover:text-blue-600 transition">
                 Accueil
@@ -24,11 +27,12 @@ export default function Home() {
                 Connexion
               </Link>
             </li>
-            <li>
-              <Link href="/validation" className="hover:text-blue-600 transition">
+            {/* <li>
+             <Link href="/validation" className="hover:text-blue-600 transition">
                 Validation d'identité
               </Link>
-            </li>
+              
+            </li> */}
           </ul>
         </nav>
       </header>
